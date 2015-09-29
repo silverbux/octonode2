@@ -4,13 +4,13 @@ octonode is a library for nodejs to access the [github v3 api](http://developer.
 
 ## Installation
 ```
-npm install octonode
+npm install octonode2
 ```
 
 ## Usage
 
 ```js
-var github = require('octonode');
+var github = require('octonode2');
 
 // Then we instantiate a client with or without a token (as show in a later section)
 
@@ -124,7 +124,7 @@ github.auth.config({
 var http = require('http')
   , url = require('url')
   , qs = require('querystring')
-  , github = require('octonode');
+  , github = require('octonode2');
 
 // Build the authorization config and url
 var auth_url = github.auth.config({
@@ -387,7 +387,7 @@ ghme.issues({
   per_page: 100,
   filter: 'assigned',
   state: 'open',
-  sort: 'created'  
+  sort: 'created'
 }, callback); //array of issues
 ```
 
